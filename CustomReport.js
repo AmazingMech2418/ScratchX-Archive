@@ -41,7 +41,7 @@ geo: ['latitude','longitude']
     hat = false;
     };
     ext.lollol = function(xxdd) {
-    return xxdd;
+    rtrn = xxdd;
     };
     // Name of Scratch Extension goes here
     ScratchExtensions.register('Custom Reporters', descriptor, ext); 
