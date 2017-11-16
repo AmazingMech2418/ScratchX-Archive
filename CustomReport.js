@@ -28,8 +28,9 @@ geo: ['latitude','longitude']
  
     // What blocks do go here
     ext.creport = function() {
+            rtrn = "NA";
     hat = true;
-    rtrn = "NA";
+
     var lol = rtrn;
     while(lol !== "NA") {
     lol = rtrn;
