@@ -15,7 +15,7 @@ var rtrn = "NA";
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['R', 'Custom reporter 1', 'creport'],
+            ['r', 'Custom reporter 1', 'creport'],
             ['h', 'define Custom reporter 1', 'chat'],
             [' ', 'return %s', 'lollol', '']
         ],
