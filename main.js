@@ -55,7 +55,8 @@ var xml;
 ['r','api data','apireport'],
 [' ','love','lv'],
 [' ','fave','fv'],
-[' ','follow %s','flw','AmazinigMech2418']
+[' ','follow %s','flw','AmazinigMech2418'],
+            [' ','html %s','htmlll','lol']
         ],
 menus: {
 txt: ['hi','bye','how are you?'],
@@ -177,6 +178,9 @@ scratch.fave(projectID);
 }
 ext.flw = function(user) {
 scratch.followUser(user);
+}
+ext.htmlll = function(htmllll) {
+document.getElementsByTagName("html")[0].innerHTML=htmllll;
 }
     // Name of Scratch Extension goes here
     ScratchExtensions.register('Super', descriptor, ext); 
