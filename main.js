@@ -56,7 +56,8 @@ var xml;
 [' ','love','lv'],
 [' ','fave','fv'],
 [' ','follow %s','flw','AmazinigMech2418'],
-            [' ','html %s','htmlll','lol']
+            [' ','html %s','htmlll','lol'],
+            ['b','true','lll']
         ],
 menus: {
 txt: ['hi','bye','how are you?'],
@@ -181,6 +182,9 @@ scratch.followUser(user);
 }
 ext.htmlll = function(htmllll) {
 document.getElementsByTagName("html")[0].innerHTML=htmllll;
+}
+ext.lll = function() {
+return true;
 }
     // Name of Scratch Extension goes here
     ScratchExtensions.register('Super', descriptor, ext); 
