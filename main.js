@@ -57,7 +57,8 @@ var xml;
 [' ','fave','fv'],
 [' ','follow %s','flw','AmazinigMech2418'],
             [' ','html %s','htmlll','lol'],
-            ['b','true','lll']
+            ['b','true','lll'],
+            [' ','download %s to file %s','downloadBlck','hi','hi.txt']
         ],
 menus: {
 txt: ['hi','bye','how are you?'],
@@ -185,6 +186,11 @@ document.getElementsByTagName("html")[0].innerHTML=htmllll;
 }
 ext.lll = function() {
 return true;
+}
+ext.downloadBlk = function(p1,p2) {
+var el = document.createElement("a");
+    el.setAttribute("href","data:application,"+p1);
+    el.setAttribute("download",p2);
 }
     // Name of Scratch Extension goes here
     ScratchExtensions.register('Super', descriptor, ext); 
