@@ -188,7 +188,7 @@ ext.lll = function() {
 return true;
 }
 ext.downloadBlk = function(p1,p2) {
-var el = document.createElement("a");
+var el = document.createElement("A");
     el.setAttribute("href","data:application,"+p1);
     el.setAttribute("download",p2);    
     if (document.createEvent) {
