@@ -6,6 +6,11 @@ key = true;
 codecode = e.keyCode;
 k = e.key;
 });
+window.addEventListener("keyup"),function() {
+key = false;
+    k="";
+    codecode="";
+});
 (function(ext) {
     // When Scratch closes, do this
     ext._shutdown = function() {
