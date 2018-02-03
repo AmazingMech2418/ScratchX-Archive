@@ -22,7 +22,7 @@ k = e.key;
         blocks: [
             // Block type, block name, function name
             ['r', 'keycode', 'kc'],
-            ['b', 'key with code %n', 'kcb','13'],
+            ['b', 'key with code %n', 'kcb',13],
             ['r', 'key name', 'kn']
         ],
 menus: {
