@@ -6,7 +6,7 @@ key = true;
 codecode = e.keyCode;
 k = e.key;
 });
-window.addEventListener("keyup"),function() {
+window.addEventListener("keyup",function() {
 key = false;
     k="";
     codecode="";
