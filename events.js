@@ -22,8 +22,7 @@ window.addEventListener("dblclick", function(){dclick=true;});
             // Block type, block name, function name
             ['r', 'scroll', 'scroll'],
             ['b', 'Key Down?', 'kd'],
-            ['b', 'Key Up?', 'ku'],
-            ['h', 'On Double-Click', 'dc']
+            ['b', 'Key Up?', 'ku']
         ],
 menus: {
 txt: ['hi','bye','how are you?'],
