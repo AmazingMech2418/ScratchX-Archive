@@ -25,24 +25,8 @@ geo: ['latitude','longitude']
     };
  
     // What blocks do go here
-    ext.creport = function() {
-            rtrn = "NA";
-    hat = true;
 
-    var lol = rtrn;
-    while(lol !== "NA") {
-    lol = rtrn;
-    }
-    return lol;
-    };
-    ext.chat = function() {
-    return hat;
-    hat = false;
-    };
-    ext.lollol = function(xxdd) {
-    rtrn = xxdd;
-    };
     // Name of Scratch Extension goes here
-    ScratchExtensions.register('Custom Reporters', descriptor, ext); 
+    ScratchExtensions.register('events', descriptor, ext); 
      // The name is 'Hello, World!''
 })({});
