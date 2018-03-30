@@ -1,3 +1,10 @@
+var scrollvar = 0;
+var keydata = false;
+var dclick = false;
+window.addEventListener("wheel",function(e){scrollvar+=e.deltaY/100});
+window.addEventListener("keydown",function(){keydata=true;});
+window.addEventListener("keyup",function(){keydata=false;});
+window.addEventListener("dblclick", function(){dclick=true;});
 (function(ext) {
     // When Scratch closes, do this
     ext._shutdown = function() {
@@ -13,9 +20,10 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['r', 'Custom reporter 1', 'creport'],
-            ['h', 'define Custom reporter 1', 'chat'],
-            [' ', 'return %s', 'lollol', '']
+            ['r', 'scroll', 'scroll'],
+            ['b', 'Key Down?', 'kd'],
+            ['b', 'Key Up?', 'ku'],
+            ['h', 'On Double-Click', 'dc']
         ],
 menus: {
 txt: ['hi','bye','how are you?'],
@@ -25,7 +33,19 @@ geo: ['latitude','longitude']
     };
  
     // What blocks do go here
-
+ext.scroll = function() {
+return scrollvar;
+};
+ext.kd = function() {
+return keydata;
+};
+ext.ku = function() {
+return !keydata;
+};
+    ext.dc = function() {
+    return dclick;
+        dclick=false;
+    }
     // Name of Scratch Extension goes here
     ScratchExtensions.register('events', descriptor, ext); 
      // The name is 'Hello, World!''
